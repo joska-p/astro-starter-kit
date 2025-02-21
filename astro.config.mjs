@@ -9,6 +9,8 @@ const ReactCompilerConfig = {
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://joska-p.github.io/astro-starter-kit/",
+  base: "astro-starter-kit/",
   integrations: [
     react({
       babel: {

@@ -1,48 +1,51 @@
-# Astro Starter Kit: Basics
+# Astro Starter Kit
 
-```sh
-npm create astro@latest -- --template basics
-```
+A starter kit for building fast, scalable, and secure websites with Astro.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Getting Started
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+1. Clone the repository: `git clone https://github.com/joska-p/astro-starter-kit.git`
+2. Install dependencies: `pnpm install`
+3. Start the development server: `pnpm dev`
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Features
 
-## 🚀 Project Structure
+- Fast and scalable website built with Astro
+- Pre-configured with React 19 and TypeScript
+- Includes a basic layout and styling with Tailwind CSS
+- Supports dark mode and light mode
+- Includes a counter component as an example
+- Optimized with React Compiler (beta) for improved performance
 
-Inside of your Astro project, you'll see the following folders and files:
+## Directory Structure
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- `src`: Source code for the website
+  - `components`: Reusable React components
+  - `layouts`: Website layouts
+  - `pages`: Website pages
+  - `styles`: Global styles and CSS variables
+- `public`: Public assets and static files
+- `tsconfig.json`: TypeScript configuration file
+- `astro.config.mjs`: Astro configuration file
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Scripts
 
-## 🧞 Commands
+- `pnpm dev`: Start the development server
+- `pnpm build`: Build the website for production
+- `pnpm preview`: Preview the built website
+- `pnpm lint`: Run ESLint with the following plugins:
+  - `eslint-plugin-astro`: Astro-specific linting rules
+  - `eslint-plugin-import`: Import-related linting rules
+  - `eslint-plugin-jsx-a11y`: JSX accessibility linting rules
+  - `eslint-plugin-react`: React-specific linting rules
+  - `eslint-plugin-react-compiler`: React Compiler-specific linting rules
+  - `eslint-plugin-react-hooks`: React Hooks linting rules
+- `pnpm format`: Format code with Prettier
 
-All commands are run from the root of the project, from a terminal:
+## Contributing
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Contributions are welcome! Please submit a pull request with a clear description of your changes.
 
-## 👀 Want to learn more?
+## License
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This project is licensed under the MIT License.
