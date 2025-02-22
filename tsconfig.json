@@ -5,14 +5,14 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@assets/*": ["assets/*"],
-      "@components/*": ["components/*"],
-      "@layouts/*": ["layouts/*"],
-      "@pages/*": ["pages/*"],
-      "@styles/*": ["styles/*"],
-      "@lib/*": ["lib/*"]
+      "#assets/*": ["./src/assets/*"],
+      "#components/*": ["./src/components/*"],
+      "#layouts/*": ["./src/layouts/*"],
+      "#pages/*": ["./src/pages/*"],
+      "#styles/*": ["./src/styles/*"],
+      "#lib/*": ["./src/lib/*"]
     }
   }
 }

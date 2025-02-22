@@ -1,6 +1,33 @@
 ---
-import { buttonVariants } from "@components/ui/button/buttonVariants";
-import { cn } from "@lib/cn";
+import { buttonVariants } from "#components/ui/button/buttonVariants";
+import { cn } from "#lib/cn";
+
+const routes = {
+  about: {
+    path: "/about",
+    name: "About",
+  },
+  careers: {
+    path: "/careers",
+    name: "Careers",
+  },
+  history: {
+    path: "/history",
+    name: "History",
+  },
+  services: {
+    path: "/services",
+    name: "Services",
+  },
+  projects: {
+    path: "/projects",
+    name: "Projects",
+  },
+  blog: {
+    path: "/blog",
+    name: "Blog",
+  },
+};
 ---
 
 <header class="bg-background">
@@ -25,59 +52,18 @@ import { cn } from "@lib/cn";
       <div class="md:flex md:items-center md:gap-12">
         <nav aria-label="Global" class="hidden md:block">
           <ul class="flex items-center gap-6 text-sm">
-            <li>
-              <a
-                class="text-foreground hover:text-foreground/75 transition"
-                href="#"
-              >
-                About
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-foreground hover:text-foreground/75 transition"
-                href="#"
-              >
-                Careers
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-foreground hover:text-foreground/75 transition"
-                href="#"
-              >
-                History
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-foreground hover:text-foreground/75 transition"
-                href="#"
-              >
-                Services
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-foreground hover:text-foreground/75 transition"
-                href="#"
-              >
-                Projects
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-foreground hover:text-foreground/75 transition"
-                href="#"
-              >
-                Blog
-              </a>
-            </li>
+            {
+              Object.values(routes).map((route) => (
+                <li>
+                  <a
+                    class="text-foreground hover:text-foreground/75 transition"
+                    href={route.path}
+                  >
+                    {route.name}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </nav>
 
